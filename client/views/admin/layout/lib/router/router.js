@@ -2,9 +2,7 @@ AdminController = RouteController.extend({
 	layoutTemplate: 'adminLayout',
 
 	onBeforeAction: function () {
-		if (Meteor.loggingIn()) {
-			return this.render('loading');
-		} else if (!Meteor.user()) {
+		if (!Meteor.user() && !Meteor.loggingIn()) {
 			return this.redirect('home');
 		} else {
 			return this.next();
