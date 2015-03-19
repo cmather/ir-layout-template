@@ -1,0 +1,1 @@
+Router.route('admin/login', {name: 'admin.login'});

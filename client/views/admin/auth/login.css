@@ -1,0 +1,8 @@
+ul.inline {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.inline li {
+	display: inline-block;
+}
