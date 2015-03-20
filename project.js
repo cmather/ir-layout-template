@@ -31,4 +31,7 @@ if (Meteor.isClient) {
 	// Admin Dashboard Controller
 	AdminDashboardController = AdminController.extend({});
 
+  Template.adminLayout.rendered = function() {
+    console.log('rendered admin layout');
+  };
 }
