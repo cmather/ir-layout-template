@@ -1,0 +1,47 @@
+<template name="mainLayout">
+	<header>
+		<nav>
+			<ul class="inline">
+				<li>
+					<a href="{{pathFor 'home'}}">home</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		{{> yield}}
+	</main>
+</template>
+
+<template name="adminLayout">
+	<div class="admin">
+		<header>
+			<nav>
+				<p>admin nav</p>
+			</nav>
+		</header>
+		<main>
+			{{> yield}}
+		</main>
+	</div>
+</template>
+
+<template name="home">
+	<p>home page</p>
+</template>
+
+<template name="adminLogin">
+	<form>
+		<input type="text" name="user" placeholder="E-mail or username">
+		<input type="password" name="password" placeholder="Password">
+		<button type="submit">Enter</button>
+	</form>
+</template>
+
+<template name="404">
+	<p>404</p>
+</template>
+
+<template name="loading">
+	<p>loading</p>
+</template>

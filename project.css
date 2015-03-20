@@ -6,3 +6,7 @@ ul.inline {
 ul.inline li {
 	display: inline-block;
 }
+
+.admin {
+	background-color: cadetblue;
+}
